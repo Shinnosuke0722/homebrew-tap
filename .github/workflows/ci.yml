@@ -25,8 +25,6 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@c8707045ccae42888fe98e86f2ee8938bc7cc193
-      - name: Add local tap
-        run: brew tap Shinnosuke0722/tap "$GITHUB_WORKSPACE"
       - name: Check formula style
         run: brew style --formula Shinnosuke0722/tap/jm
       - name: Install and test jm
